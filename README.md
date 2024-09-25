@@ -1,73 +1,103 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
-
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
-
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
-
-## Description
-
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
-
+# Task Tracker
+ 
+This **Task Tracker** application, inspired by **Jira**, is a powerful tool designed to help teams manage tasks and projects efficiently. Built using **React**, **Mantine**, and **Tailwind CSS**, it provides an intuitive interface for creating, assigning, and tracking tasks across teams, making project management seamless for small to medium-sized teams.
+ 
+## Table of Contents
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Modules](#modules)
+  - [Auth Module](#auth-module)
+  - [Dashboard Module](#dashboard-module)
+  - [User Module](#user-module)
+  - [Project Module](#project-module)
+  - [Task Module](#task-module)
+- [Screenshots](#screenshots)
+- [Technologies Used](#technologies-used)
+ 
+## Features
+ 
+- **User Authentication**: Secure login using email and password authentication.
+- **User Management**: Role-based access control to manage team members effectively.
+- **Project Management**: Create, edit, and manage multiple projects.
+- **Task Management**: Assign tasks to team members and track progress.
+- **Status Tracking**: Real-time task progress tracking and status updates.
+ 
 ## Installation
-
-```bash
-$ npm install
-```
-
-## Running the app
-
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+ 
+1. **Clone the repository**:
+    ```bash
+    git clone git@github.com:Tamilselvam-Muthusamy/Task-Tracker.git
+    ```
+ 
+2. **Navigate to the project directory**:
+    ```bash
+    cd Task-Tracker
+    ```
+ 
+3. **Install dependencies**:
+    ```bash
+    npm install
+    ```
+    or
+    ```bash
+    bun install
+    ```
+ 
+## Usage
+ 
+To run the application locally:
+ 
+1. **Start the development server**:
+    ```bash
+    npm run dev
+    ```
+    or
+    ```bash
+    bun run dev
+    ```
+ 
+2. The application will be available at `http://localhost:3000`.
+ 
+## Modules
+ 
+### Auth Module
+- Users can securely log in using email and password-based authentication.
+ 
+### Dashboard Module
+- Displays a summary of key metrics such as users, projects, tasks, and their respective statuses.
+ 
+### User Module
+- Allows admin to add, view, and update user information for efficient user management.
+ 
+### Project Module
+- Provides project management functionalities, including creating, editing, and retrieving project details.
+ 
+### Task Module
+- Enables task creation, assignment to users, and updating task statuses within specific projects.
+ 
+## Screenshots
+ 
+Here are some screenshots highlighting various sections of the application:
+ 
+### Login & Authentication
+![Auth Screenshot](https://github.com/Tamilselvam-Muthusamy/Task-Tracker/assets/91073344/c080a8c0-b0ad-4de3-ae68-7d79f714a869)
+ 
+### Admin Dashboard
+![Admin Dashboard](https://github.com/Tamilselvam-Muthusamy/Task-Tracker/assets/91073344/a478f4ff-0831-4259-8e5f-1473bc1fcb2e)
+ 
+### User Management
+![User Management](https://github.com/Tamilselvam-Muthusamy/Task-Tracker/assets/91073344/6a8c4585-6550-427f-be48-542f88e24392)
+ 
+### Project Management
+![Project Management](https://github.com/Tamilselvam-Muthusamy/Task-Tracker/assets/91073344/dbce6a12-fdc8-4209-a6d5-25a37970c1f9)
+ 
+### Task Management
+![Task Management](https://github.com/Tamilselvam-Muthusamy/Task-Tracker/assets/91073344/1302034a-1406-41a2-a661-68e4b038ac13)
+ 
+## Technologies Used
+ 
+- **React**: For building the dynamic user interface.
+- **Mantine**: For elegant and accessible component design.
+- **Tailwind CSS**: For responsive, modern UI styling.
+- **Node.js & npm/bun**: For package management and running the development server.
