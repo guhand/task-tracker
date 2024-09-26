@@ -9,30 +9,33 @@ export class DashboardService {
     const [
       userCount,
       projectCount,
+      totalTaskCount,
       taskCount,
       bugCount,
       toDoCount,
       inProgressCount,
-      resolvedCount,
       reopenedCount,
+      doneCount,
     ] = await Promise.all([
       this.dashboardRepo.getUserCount(),
       this.dashboardRepo.getProjectCount(),
       this.dashboardRepo.getTaskCountByTypeId(0),
+      this.dashboardRepo.getTaskCountByTypeId(TaskType.Task),
       this.dashboardRepo.getTaskCountByTypeId(TaskType.Bug),
       this.dashboardRepo.getTaskStatusByStatusId(TaskStatus.ToDO),
       this.dashboardRepo.getTaskStatusByStatusId(TaskStatus.InProgress),
-      this.dashboardRepo.getTaskStatusByStatusId(TaskStatus.Resolved),
-      this.dashboardRepo.getTaskStatusByStatusId(TaskStatus.Reopened),
+      this.dashboardRepo.getTaskStatusByStatusId(TaskStatus.Reopen),
+      this.dashboardRepo.getTaskStatusByStatusId(TaskStatus.Done),
     ]);
     return {
       userCount,
       projectCount,
+      totalTaskCount,
       taskCount,
       bugCount,
       toDoCount,
       inProgressCount,
-      resolvedCount,
+      doneCount,
       reopenedCount,
     };
   }
