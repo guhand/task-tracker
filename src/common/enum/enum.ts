@@ -4,15 +4,15 @@ export enum Role {
 }
 
 export enum TaskType {
-  Bug = 1,
-  Enhancement = 2,
+  Task = 1,
+  Bug = 2,
 }
 
 export enum TaskStatus {
   ToDO = 1,
   InProgress = 2,
-  Resolved = 3,
-  Reopened = 4,
+  Reopen = 3,
+  Done = 4,
 }
 
 export enum AppError {

@@ -4,9 +4,9 @@ import { Config } from 'src/common/config/config';
 
 export const roles = ['Admin', 'User'];
 
-export const taskStatus = ['ToDo', 'InProgress', 'Resolved', 'Reopened'];
+export const taskStatus = ['ToDo', 'InProgress', 'Reopened', 'Done'];
 
-export const taskTypes = ['Bug', 'Enhancement'];
+export const taskTypes = ['Task', 'Bug'];
 
 export async function generateToken(
   id: number,
