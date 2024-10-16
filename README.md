@@ -12,7 +12,6 @@ This **Task Tracker** application, inspired by **Jira**, is a powerful tool desi
   - [User Module](#user-module)
   - [Project Module](#project-module)
   - [Task Module](#task-module)
-- [Screenshots](#screenshots)
 - [Technologies Used](#technologies-used)
 
 ## Features
