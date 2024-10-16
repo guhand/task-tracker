@@ -27,7 +27,7 @@ This **Task Tracker** application, inspired by **Jira**, is a powerful tool desi
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/guhand/task-tracker
+    git clone https://github.com/guhand/task-tracker.git
     ```
 
 2. **Navigate to the project directory**:
@@ -49,7 +49,7 @@ To run the application locally:
     npm run start:dev
     ```
 
-2. The backend API will be available at `http://localhost:3000`.
+2. The backend API will be available at `http://localhost:5000`.
 
 ## Modules
 
