@@ -37,3 +37,28 @@ A **Task Tracker** application built with **Node.js**, **NestJS**, and **SQLite*
 Start the development server:
 ```bash
 npm run start:dev
+```
+
+## Modules
+
+### Auth Module
+- Users can securely log in using email and password-based authentication.
+
+### Dashboard Module
+- Displays a summary of key metrics such as users, projects, tasks, and their respective statuses.
+
+### User Module
+- Allows admin to add, view, and update user information for efficient user management.
+
+### Project Module
+- Provides project management functionalities, including creating, editing, and retrieving project details.
+
+### Task Module
+- Enables task creation, assignment to users, and updating task statuses within specific projects.
+
+## Technologies Used
+
+- **Node.js**: As the runtime for backend services.
+- **NestJS**: A framework for building efficient, reliable, and scalable server-side applications.
+- **SQLite**: A lightweight, serverless SQL database used for storing data.
+- **npm**: For managing project dependencies and running scripts.
